@@ -1,0 +1,256 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+    width: 100vw;
+}
+
+/* Nav-bar */
+.nav-item:hover {
+    border-bottom: 3px solid #ff7d1a;
+}
+
+.nav-item {
+    margin: 0 12px;
+}
+
+#user-img {
+    margin-left: 15px;
+}
+
+.navbar-toggler {
+    transition: none !important;
+}
+
+.navbar-brand.logo {
+    margin-right: auto;
+}
+
+button[class="navbar-toggler"] {
+    border: none;
+    padding: 0 0;
+    margin-right: 20px;
+}
+
+.bg-orange {
+    color: #ff7d1a;
+}
+
+h2 {
+    color: #1d2025;
+    font-weight: 700 !important;
+}
+
+p {
+    color: #68707d;
+}
+
+.container-fluid.price-section {
+    padding: 0 0;
+}
+
+.navbar-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+.close-btn {
+    background-image: url("images\\icon-close.svg");
+    width: 50px;
+    max-height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+}
+
+.close-btn.appear {
+    height: 50px;
+}
+
+.collapse.navbar-collapse.show {
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    font-size: 1.3rem;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+}
+
+/* Carasoul */
+.carousel-control-next-icon {
+    background-image: url("images\\circle-arrow-right-solid (1).svg") !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("images\\circle-arrow-left-solid.svg") !important;
+}
+
+/* Product Description */
+h4[class="bg-orange"] {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.col-7 p {
+    text-decoration: line-through;
+    text-align: end;
+}
+
+.col-2 p {
+    background-color: #ffede0;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn {
+    --bs-btn-bg: #ff7d1a !important;
+    color: #ffffff !important;
+    --bs-btn-hover-bg: #b4672c;
+}
+
+.col-4.plus:hover,
+.col-4.minus:hover {
+    cursor: pointer;
+}
+
+.quantity-btn {
+    background-color: #f7f8fd;
+}
+
+.quantity-btn>.col-4 {
+    text-align: center;
+}
+
+/* Cart Popup */
+.card {
+    position: absolute !important;
+    z-index: 8;
+    right: 5px;
+    width: 350px;
+    height: 200px;
+    display: none !important;
+    /* Must show it through cart */
+}
+
+.card.appear,
+.card-body>.btn.appear {
+    display: block !important;
+}
+
+.row>img {
+    width: 70px;
+    height: 50px;
+}
+
+.card-body>.row {
+    flex-wrap: nowrap !important;
+    display: none;
+    /* Must show it through event Listener */
+}
+
+.card-body>.row.appear {
+    display: flex !important;
+}
+
+.card-text.disappear {
+    display: none !important;
+}
+
+.card-text.appear {
+    display: block !important;
+}
+
+.popup-paragraphs>p {
+    margin: 0 0;
+}
+
+.popup-paragraphs>p>span {
+    font-weight: 700;
+}
+
+.popup-paragraphs {
+    width: auto !important;
+}
+
+.card-body>.row>i {
+    margin-top: 5px;
+}
+
+.card-body>.btn {
+    width: 100%;
+    display: none;
+    /* Must show it through event Listener */
+}
+
+@media (min-width:786px) {
+    .navbar {
+        border-bottom: 1px solid #1d2025;
+        --bs-navbar-padding-y: 1.2rem !important;
+    }
+
+    .preview-images-container {
+        max-width: inherit;
+    }
+
+    img.active {
+        border: 2px solid #ff7d1a;
+        opacity: 0.5;
+    }
+
+    .row.lightbox {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        display: none;
+    }
+    .row.lightbox.active {
+        display: block;
+        z-index: 9999;
+    }
+    .lightbox #carouselexample {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .lightbox .preview-images-container-1 {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .lightbox #close-btn{
+        z-index: 9999;
+        position: absolute;
+        right: 15%;
+    }
+    .lightbox #close-btn:hover{
+        cursor: pointer;
+    }
+    #disableDiv {
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-color: black;
+        z-index: 1;
+        display: none;
+      }
+      #disableDiv.active {
+        display: block;
+      }
+}

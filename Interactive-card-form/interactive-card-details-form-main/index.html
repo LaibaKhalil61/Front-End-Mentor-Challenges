@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-section">
+    <img src="images\bg-card-back.png" alt="card-back" id="card-back">
+    <img src="images\bg-card-front.png" alt="card-front" id="card-front">
+    <div class="card-content">
+      <!-- <img src="images\icon-complete.svg" alt=""> -->
+      <div class="card-top">
+        <img src="images\card-logo.svg" alt="" width="20%" id="card-top-circles">
+      </div>
+      <div class="card-btm">
+        <span>0000 0000 0000 0000</span>
+        <div class="card-name-btm">
+          <span>Jane Appleseed</span>
+          <span>00/00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btm-section">
+    <form action="">
+      <label for="name">Cardholder Name</label>
+      <input type="text" name="name" id="name" placeholder="e.g Jane Appleseed">
+      <label for="number">Card Number</label>
+      <input type="number" name="number" id="number" placeholder="e.g 1234 5678 9123 0000">
+      <div class="grid-container">
+        <div id="grid-item-1">
+          Exp. Date (MM/YY)
+        </div>
+        <label for="cvc" id="grid-item-2">CVC</label>
+        <input type="number" name="month" id="grid-item-3" placeholder="MM">
+        <input type="number" name="year" id = "grid-item-4" placeholder="YY">
+        <input type="number" id="grid-item-5" name="cvc" placeholder="e.g. 123">
+      </div>
+      <input type="button" class = "btn" onclick="ConfirmationMsg()"value="Confirm">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

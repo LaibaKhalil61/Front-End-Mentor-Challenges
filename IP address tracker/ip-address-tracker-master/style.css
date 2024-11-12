@@ -1,0 +1,108 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+}
+/* Full body container */
+.container-fluid{
+    padding: 0;
+    height: 40vh;
+}
+/* Top section */
+/* Background Image */
+.img-fluid{
+    height: 100%;
+}
+h1{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    width: max-content;
+}
+/* INput Field */
+.input-field{
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 50%!important; */
+    /* box-shadow: 0px -2px 40px -6px rgba(0,0,0,0.64); */
+}
+.input-group-text{
+    border-radius: 0 5px 5px 0!important;
+    background-color: #000!important;
+    border: none;
+}
+.input-group-text:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.form-control{
+    padding: 1rem 1rem !important;
+    border-radius: 5px 0 0 5px!important;
+}
+.error-msg{
+    color: red;
+    background: transparent;
+    font-size: 1rem;
+    display: none;
+}
+.error-msg.active{
+    display: block;
+}
+.input-group span{
+    background-color: #000000;
+    border: none;
+}
+/* Background Image */
+picture img,picture source{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+h4{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 1.2rem;
+    color: #969696;
+}
+h2{
+    font-size: 1.5rem;
+}
+.information{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    background-color: #ffffff;
+    border-radius:0.375rem ;
+    padding: 1rem 2rem;
+    box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.548);
+    z-index: 9999;
+}
+/* FOR MAP */
+.map-container{
+    height: 60vh;
+}
+#map {
+    height: 100%;
+ }
+ @media (min-width:768px) {
+    li{
+        border-right: 1px solid #969696;
+    }
+ }

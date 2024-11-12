@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Log into Your Account</h2>
+    </div>
+    <div class="form-container">
+        <form action="Login" id="form" name="form" onsubmit="Validate(event)">
+            <div class="form-control user-container">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" onblur="validateEmailAddress()">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <input type="submit" value="Log In" id="button">
+            <div class="signup-container">
+                <p>Don't have an account?<a href="#">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="Login.js"></script>
+    <script src="https://kit.fontawesome.com/3a32b79747.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

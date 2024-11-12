@@ -1,0 +1,92 @@
+/* General CSS processing */
+html{
+    font-size: 16px;
+    font-family: 'Karla',sans-serif;
+    box-sizing: border-box;
+}
+h3,h2{
+    margin: 0;
+}
+body{
+    background-color: #ffff;
+}
+
+/* For whole container / component */
+.main-container{
+    width:50%;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%);
+    right:50%;
+    border-radius: 20px;
+    box-shadow: 13px 11px 18px -1px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+/* For top content */
+.top-content{
+    width: 100%;
+    height: 40%;
+}
+.top-content,.subscription-section,.whyus-section{
+    padding: 30px;
+}
+h2{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 15px;
+}
+.top-content h3{
+    color: hsl(71, 73%, 54%);
+}
+.top-content p{
+    color: hsl(218, 22%, 67%);
+    width: 90%;
+}
+/* For bottom content */
+.btm-content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    color: #ffff;
+}
+/* Bottom left section */
+.subscription-section{
+    flex: 50%;
+    background-color: hsl(179, 62%, 43%);
+}
+#amount-para{
+    color:hsl(204, 43%, 93%);
+}
+span{
+    margin-right: 10px;
+    color: #ffff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#btn{
+    color: #ffff;
+    font-weight: 700;
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 5px rgb(101, 101, 101);
+    background-color: hsl(71, 73%, 54%);
+}
+#btn:hover{
+    background-color: hsla(71, 67%, 49%, 0.827);
+    cursor: pointer;
+}
+/* Bottom Right Section */
+.whyus-section{
+    flex: 50%;
+    background-color: hsla(179, 62%, 43%, 0.726);
+}
+ul{
+    padding-left: 0;
+}
+.whyus-section li{
+    
+    list-style-type: none;
+    color : hsl(204, 43%, 93%);
+}

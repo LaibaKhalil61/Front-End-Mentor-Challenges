@@ -1,0 +1,105 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: #385361;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #09333c;
+    color: #ffffff;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+h2{
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-top: 30px;
+}
+.user-container.error{
+    margin-top: 100px;
+}
+.form-container{
+    font-family: "Open Sans", sans-serif;
+    background-color: #ffffff;
+    width: 40%;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* min-height: 400px; */
+    border-radius: 5px;
+    box-shadow: 10px 9px 17px 10px rgba(82, 82, 82, 0.67);
+    padding: 30px 25px;
+}
+.form-control{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+.form-control i{
+    position: absolute;
+    left: 94%;
+    top: 11%;
+    visibility: hidden;
+}
+
+.form-control input{
+    position: absolute;
+    left: 45%;
+    padding: 10px 40px;
+}
+.form-control span{
+   position: absolute;
+   left: 45%;
+   top: 40%;
+}
+#button{
+    position: relative;
+    left: 50%;
+    padding: 13px 100px;
+    transform: translateX(-50%);
+    background-color:  #386982;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: #385361;
+}
+.form-control span{
+    visibility: hidden;
+}
+.form-control.error input{
+    border-color: red;
+}
+.fa-circle-exclamation{
+    color: red;
+}
+.form-control.error .fa-circle-exclamation{
+    visibility:visible;
+}
+.form-control.error{
+    height: 90px;
+}
+.form-control.error span{
+    visibility: visible;
+    color: red;
+}
+.form-control.success input{
+    border-color: rgb(5, 172, 5);
+}
+.fa-circle-check{
+    color: rgb(4, 177, 4);
+}
+.form-control.success .fa-circle-check{
+    visibility:visible;
+}
+
+

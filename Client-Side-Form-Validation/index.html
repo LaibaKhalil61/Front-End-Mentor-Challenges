@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>Create Account</h2>
+    </div>
+    <div class="form-container">
+        <form action="" id="form" name="form" onsubmit="Validate(event)">
+            <div class="form-control user-container">
+                <label for="first-name">First Name</label>
+                <input type="text" name="user-name" id="first-name" onblur="ValidateFirstName()">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <div class="form-control">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" onblur="ValidatePassword()">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <div class="form-control">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password" onblur="ValidateConfirmPassword()">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <div class="form-control">
+                <label for="date-of-birth">Date Of Birth</label>
+                <input type="date" name="date-of-birth" id="date-of-birth" onblur="ValidateDOB()">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <!-- <p>Address</p>
+            <div class="address-container">
+                 <div class="form-control">
+                    <label for="street">Street</label>
+                    <input type="text" name="street" id="street">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Error Message</span>
+                </div> 
+                <div class="form-control">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Error Message</span>
+                </div>
+                <div class="form-control">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Error Message</span>
+                </div>
+            </div> -->
+            <div class="form-control">
+                <label for="phone_no">Phone Number</label>
+                <input type="number" name="phone_no" id="phone_no" onblur="ValidatePhoneNo()">
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Error Message</span>
+            </div>
+            <input type="submit" value="Submit" id="button">
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3a32b79747.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

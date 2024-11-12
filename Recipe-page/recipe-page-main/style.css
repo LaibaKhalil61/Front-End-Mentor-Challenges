@@ -1,0 +1,104 @@
+/* CSS reset code */
+html{
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: "Outfit",sans-serif;
+}
+*,*::before,*.after{
+    box-sizing: inherit;
+}
+h1,h2,h3{
+    margin: 0;
+}
+ul,ol{
+    padding-left: 0;
+}
+h3{
+    color: #7b284f;
+    padding-left: 10px;
+}
+h2{
+    color: #854632;
+    font-family: "Young Serif",sans-serif;
+}
+/* Intro Section */
+h1{
+    color: #302d2c;
+    font-family: "Young Serif",sans-serif;
+}
+.intro-section{
+    margin-top: 20px;
+}
+/* PrepSection */
+.prep-section{
+    background-color: #feecf45e;
+    border-radius: 5px;
+    padding: 10px;
+}
+.prep-section li::marker{
+    color: #7b284f;
+}
+/* Nutrition SECTION */
+.weight{
+    color: #854632;
+    font-weight: 800;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2px solid #5f574e;
+}
+.table{
+    padding-inline: 20px;
+}
+p,li{
+    color: #5f574e;
+}
+/* LINES */
+.line-parent{
+    text-align: center;
+}
+.line{
+    display: inline-block;
+    width : 70%;
+    /* margin: 30px; */
+    border-top: 0.2px solid #5f574e;
+
+}
+/* General  */
+.Ingredients-section li::marker,.Instructions-section li::marker{
+    color: #854632;
+}
+.prep-section ul,.Instructions-section ol{
+    padding-left: 20px;
+}
+.prep-section span,.Instructions-section span{
+    font-weight: 600;
+}
+.Ingredients-section li,.prep-section li,.Instructions-section li{
+    margin: 10px;
+}
+.Ingredients-section,.Instructions-section,.nutrition-section{
+   margin-block: 20px;
+}
+/* Media Query for desktop version */
+@media (min-width:922px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+    }
+    img{
+       max-width:100%;
+       align-self: center;
+       height: auto;
+    }
+}
